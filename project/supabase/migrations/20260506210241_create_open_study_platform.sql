@@ -188,10 +188,3 @@ CREATE POLICY "Owners can delete their comments"
   TO authenticated
   USING (auth.uid() = user_id);
 
--- Seed sample forum threads
-INSERT INTO forum_threads (title, content, category, author_name) VALUES
-  ('Best tips for JEE 2024', 'What are your top strategies for cracking JEE 2024? Share your experiences!', 'Study Tips', 'Rohan K.'),
-  ('Doubts in Organic Chemistry', 'Can someone explain reaction mechanisms? I am struggling with SN1 and SN2.', 'Help', 'Priya V.'),
-  ('Recommended resources for NEET', 'Has anyone found good study materials? Please share your recommendations.', 'Resources', 'Aditya M.')
-ON CONFLICT DO NOTHING;
-

@@ -1,0 +1,10 @@
+{
+  "buildCommand": "cd project && npm run build",
+  "installCommand": "npm install",
+  "outputDirectory": "project/dist",
+  "env": {
+    "VITE_SUPABASE_URL": "@vite_supabase_url",
+    "VITE_SUPABASE_ANON_KEY": "@vite_supabase_anon_key",
+    "VITE_SUPABASE_STORAGE_BUCKET": "resources"
+  }
+}
